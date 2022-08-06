@@ -5,6 +5,7 @@ const app = express();
 
 // Configuração da aplicação
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Configuração de rotas
 app.use(usersRoute);
