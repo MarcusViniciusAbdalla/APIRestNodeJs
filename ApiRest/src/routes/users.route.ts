@@ -25,8 +25,7 @@ usersRoute.put('/users:uuid' ,(req: Request<{ uuid: string }>, res: Response , n
     res.status(StatusCodes.OK).send({ modifierUser });
 });
 
-usersRoute.delete('/users/uuid' , (req: Request<{ uuid: string }>, res: Response , next: NextFunction) =>{
-  const uuid = req.params.uuid;
+usersRoute.delete('/users/uuid' , (req: Request<{ uuid: string }>, res: Response , next: NextFunction) =>{  
   res.sendStatus(StatusCodes.OK);
 });
 
