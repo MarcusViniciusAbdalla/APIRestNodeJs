@@ -10,7 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Configuração de rotas
 app.use(usersRoute);
-
 app.use(statusRoute);
 
 // Inicialização do servidor
